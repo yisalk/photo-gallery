@@ -1,0 +1,13 @@
+<h2> {{ title }} </h2>
+<div class="scroll-container" (scroll)="onScroll()">
+  <div class="row">
+      <ul id="thumbnailsList">
+          <li *ngFor="let image of visibleImages">
+              <!-- <a [routerLink] = "['/photos', image.id]"> -->
+                <img src = "{{ image.download_url }}" class="tn" (click)="addToFavorite(image)" />
+              <!-- </a> -->
+          </li>
+      </ul>
+  </div>
+  <app-spinner *ngIf="isLoading"></app-spinner>
+</div>
