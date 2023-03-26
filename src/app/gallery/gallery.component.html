@@ -4,7 +4,7 @@
       <ul id="thumbnailsList">
           <li *ngFor="let image of visibleImages">
               <!-- <a [routerLink] = "['/photos', image.id]"> -->
-                <img src = "{{ image.download_url }}" class="tn" (click)="addToFavorite(image)" />
+                <img src = "{{ image.download_url }}" class="image-thumbnail" (click)="addToFavorite(image)" />
               <!-- </a> -->
           </li>
       </ul>

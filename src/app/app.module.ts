@@ -22,6 +22,12 @@ import { SpinnerComponent } from './spinner/spinner.component';
     AppRoutingModule,
     HttpClientModule
   ],
+  exports: [
+    NavbarComponent,
+    GalleryComponent,
+    ImageDetailComponent,
+    SpinnerComponent
+  ],
   providers: [],
   bootstrap: [AppComponent]
 })
